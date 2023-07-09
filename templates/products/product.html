@@ -2,6 +2,23 @@
 {% load static %}
 {%block content%}
 
+
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Крутой сайт</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="http://127.0.0.1:8000/shop/" class="nav-link active" aria-current="page">Главная</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+  </header>
+</div>
 <div class="album py-5 bg-light">
     <div class="container">
 
@@ -40,7 +57,4 @@
       </div>
     </div>
   </div>
-  <a class="btn btn-sm btn-outline-secondary" href="{% url 'index' %}"> основаная страница</a>
-
-
 {%endblock%}
